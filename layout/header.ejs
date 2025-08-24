@@ -137,7 +137,6 @@
       aria-labelledby="offcanvasNavbarLabel"
     >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
         <button
           type="button"
           class="btn-close"
@@ -145,43 +144,34 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
+      <div
+        class="offcanvas-body p-7 d-flex flex-column justify-content-between"
+      >
+        <div>
+          <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <div class="d-flex align-items-center pb-5 border-bottom mb-7">
+              <img
+                src="/assets/images/index/user.svg"
+                alt="user"
+                class="me-2"
+              />
+              <div>
+                <p class="fw-bold">訪客</p>
+                <p>未登入</p>
+              </div>
+            </div>
+            <p class="mb-1 fs-6 fw-bold">歡迎來到 ZOBAA</p>
+            <p>加入會員即可立即訂購、收藏行程，並享相關優惠好禮。</p>
+          </div>
+          <div>
             <a
-              class="nav-link dropdown-toggle"
+              type="button"
               href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+              class="btn text-white bg-primary ms-5 py-5 px-9 fw-semibold rounded-4 w-100"
+              >登入 / 註冊</a
             >
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex mt-3" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
