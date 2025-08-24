@@ -148,7 +148,6 @@
       aria-labelledby="offcanvasNavbarLabel"
     >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
         <button
           type="button"
           class="btn-close"
@@ -156,43 +155,34 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
+      <div
+        class="offcanvas-body p-7 d-flex flex-column justify-content-between"
+      >
+        <div>
+          <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <div class="d-flex align-items-center pb-5 border-bottom mb-7">
+              <img
+                src="data:image/svg+xml,%3csvg%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='16'%20cy='16'%20r='16'%20fill='%23CBB6AF'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M20%2013C20%2014.0609%2019.5786%2015.0783%2018.8284%2015.8284C18.0783%2016.5786%2017.0609%2017%2016%2017C14.9391%2017%2013.9217%2016.5786%2013.1716%2015.8284C12.4214%2015.0783%2012%2014.0609%2012%2013C12%2011.9391%2012.4214%2010.9217%2013.1716%2010.1716C13.9217%209.42143%2014.9391%209%2016%209C17.0609%209%2018.0783%209.42143%2018.8284%2010.1716C19.5786%2010.9217%2020%2011.9391%2020%2013ZM18%2013C18%2013.5304%2017.7893%2014.0391%2017.4142%2014.4142C17.0391%2014.7893%2016.5304%2015%2016%2015C15.4696%2015%2014.9609%2014.7893%2014.5858%2014.4142C14.2107%2014.0391%2014%2013.5304%2014%2013C14%2012.4696%2014.2107%2011.9609%2014.5858%2011.5858C14.9609%2011.2107%2015.4696%2011%2016%2011C16.5304%2011%2017.0391%2011.2107%2017.4142%2011.5858C17.7893%2011.9609%2018%2012.4696%2018%2013Z'%20fill='%23F3EEEC'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M16%205C9.925%205%205%209.925%205%2016C5%2022.075%209.925%2027%2016%2027C22.075%2027%2027%2022.075%2027%2016C27%209.925%2022.075%205%2016%205ZM7%2016C7%2018.09%207.713%2020.014%208.908%2021.542C9.74723%2020.4399%2010.8299%2019.5467%2012.0714%2018.9323C13.313%2018.3179%2014.6797%2017.9988%2016.065%2018C17.4323%2017.9987%2018.7819%2018.3095%2020.0109%2018.9088C21.2399%2019.508%2022.316%2020.3799%2023.157%2021.458C24.0234%2020.3216%2024.6068%2018.9952%2024.8589%2017.5886C25.111%2016.182%2025.0244%2014.7355%2024.6065%2013.369C24.1886%2012.0024%2023.4512%2010.755%2022.4555%209.73004C21.4598%208.70503%2020.2343%207.93186%2018.8804%207.47451C17.5265%207.01716%2016.0832%206.88877%2014.6699%207.09997C13.2565%207.31117%2011.9138%207.85589%2010.7528%208.68905C9.59175%209.52222%208.64581%2010.6199%207.99323%2011.8912C7.34065%2013.1625%207.00018%2014.571%207%2016ZM16%2025C13.9339%2025.0031%2011.9303%2024.2923%2010.328%2022.988C10.9729%2022.0647%2011.8313%2021.3109%2012.8302%2020.7907C13.829%2020.2705%2014.9388%2019.9992%2016.065%2020C17.1772%2019.9991%2018.2735%2020.2636%2019.2629%2020.7714C20.2524%2021.2793%2021.1064%2022.0159%2021.754%2022.92C20.1393%2024.2667%2018.1026%2025.0029%2016%2025Z'%20fill='%23F3EEEC'/%3e%3c/svg%3e"
+                alt="user"
+                class="me-2"
+              />
+              <div>
+                <p class="fw-bold">訪客</p>
+                <p>未登入</p>
+              </div>
+            </div>
+            <p class="mb-1 fs-6 fw-bold">歡迎來到 ZOBAA</p>
+            <p>加入會員即可立即訂購、收藏行程，並享相關優惠好禮。</p>
+          </div>
+          <div>
             <a
-              class="nav-link dropdown-toggle"
+              type="button"
               href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+              class="btn text-white bg-primary ms-5 py-5 px-9 fw-semibold rounded-4 w-100"
+              >登入 / 註冊</a
             >
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex mt-3" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
