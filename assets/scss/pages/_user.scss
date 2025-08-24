@@ -1,0 +1,64 @@
+.user-banner {
+  margin-top: 104px;
+  margin-bottom: 40px;
+}
+.avatar-1 {
+  width: 120px;
+  height: 120px;
+  border: 2px solid $primary;
+  //   top: calc(100%);
+  //   left: calc(50%);
+}
+.edit-icon {
+  top: calc(50% + 52px);
+  left: calc(50% + 40px);
+}
+.nav-link.active {
+  color: #4a3830 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #4a3830 !important;
+  background-color: transparent;
+}
+.nav-link:hover {
+  color: #886658;
+}
+.often-user-img {
+  width: 40px;
+  height: 40px;
+}
+@media (min-width: 992px) {
+  .avatar-1 {
+    width: 160px;
+    height: 160px;
+  }
+  .edit-icon {
+    top: calc(50% + 72px);
+    left: calc(50% + 56px);
+  }
+  .user-banner {
+    margin-bottom: 120px;
+  }
+  .user-bg {
+    background-image: url("/assets/images/index/deco-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .user-info {
+    background-color: white;
+    .user-info-btn-hover {
+      transition: all 0.5s;
+      padding: 0;
+      height: 0;
+      opacity: 0;
+    }
+    &:hover {
+      background-color: $primary-10;
+      .user-info-btn-hover {
+        padding: 20px;
+        height: auto;
+        opacity: 100;
+      }
+    }
+  }
+}

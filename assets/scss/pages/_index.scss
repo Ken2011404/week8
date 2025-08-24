@@ -1,0 +1,226 @@
+.banner {
+  background-image: url("/assets/images/index/hero-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-top: 112px;
+  button {
+    font-family: Poppins, sans-serif;
+  }
+}
+.recommendation {
+  background-color: #221f1e;
+  button {
+    opacity: 0;
+    display: none;
+  }
+  .card {
+    button {
+      transition: all 0.5s;
+      padding: 0px;
+      height: 0;
+      opacity: 0;
+    }
+    min-width: 275px;
+    &:hover {
+      button {
+        padding: 20px;
+        height: auto;
+        opacity: 100;
+      }
+    }
+  }
+}
+.recommendation button {
+  display: none;
+}
+.inspiration-map {
+  .btn1 {
+    background-color: white;
+  }
+}
+.inspiration-map-bg {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: $primary-10;
+    background-repeat: no-repeat;
+    background-position: center;
+    // transform: rotate(-10deg);
+    z-index: -1;
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  }
+}
+.deco-text-1 {
+  width: 130px;
+  position: absolute;
+  top: calc(0% + 30px);
+  left: calc(0% + 144px);
+}
+// .map-card {
+//   width: 312px;
+// }
+
+.swiper-slide {
+  // width: 312px !important;
+  height: auto;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-number {
+  font-family: Poppins, sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  font-style: italic;
+  color: #dfd2cd;
+  overflow: visible;
+  top: -66px;
+  left: 0;
+  z-index: 100;
+  // border: 1px solid #dfd2cd;
+}
+.map-img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+}
+.reference-bg {
+  background-image: url("/assets/images/index/bg-#.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.star-icons {
+  color: #f6bd2b;
+}
+.favorite-icon {
+  background: #00000066;
+  border-radius: 0 0 0 16px;
+}
+.marquee {
+  overflow: hidden;
+  p {
+    color: #f3eeec;
+    font-size: 32px;
+    font-weight: bold;
+    white-space: nowrap;
+
+    animation-name: marquee;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    @keyframes marquee {
+      from {
+        transform: translateX(-25%);
+      }
+      to {
+        transform: translateX(0%);
+      }
+    }
+  }
+}
+
+// .arrow_back {
+//   top: calc(0% + 200px);
+//   left: calc(0% - 80px);
+//   padding-right: 80px;
+//   overflow: visible;
+//   z-index: 2;
+// }
+.button-banner-card {
+  background-color: rgba(243, 238, 236, 0.5);
+}
+@media (min-width: 992px) {
+  .banner {
+    padding-top: 300px;
+    .search-form {
+      width: 720px;
+    }
+  }
+  .recommendation {
+    .card {
+      width: 25%;
+      max-width: 416px;
+      height: 600px;
+      transition: width 0.5s;
+      &:hover {
+        width: 100%;
+      }
+    }
+  }
+  // .swiper-slide {
+  //   width: auto !important;
+  // }
+
+  .card-number {
+    font-size: 200px;
+    top: -130px;
+  }
+
+  .map-lg-img {
+    width: 300px;
+    height: 412px;
+  }
+
+  .deco-bg {
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: "";
+      width: 2390px;
+      height: 999px;
+      position: absolute;
+      top: 120px;
+      background-image: url(/assets/images/index/deco-bg.svg);
+      background-repeat: no-repeat;
+      transform: rotate(-3.06deg);
+      z-index: -1;
+    }
+    .deco-text {
+      padding-left: 80px;
+      padding-top: 533px;
+    }
+  }
+  .deco-text-1 {
+    width: 172px;
+    position: absolute;
+    top: calc(0% + 30px);
+    left: calc(0% + 340px);
+  }
+  .offset-row {
+    transform: translateX(80px);
+  }
+  .marquee {
+    p {
+      font-size: 130px;
+    }
+  }
+  .ad-div {
+    width: 300px;
+  }
+  // .button-banner {
+  //   background-image: url("/assets/images/index/bg-line.svg");
+  //   background-repeat: no-repeat;
+  //   top: 50;
+  // }
+  .img-top {
+    top: calc(0% - 360px);
+    left: calc(0% - 240px);
+  }
+  .img-down {
+    bottom: calc(0% - 480px);
+    right: calc(0% + 40px);
+  }
+  .img-line {
+    top: calc(50%);
+  }
+}

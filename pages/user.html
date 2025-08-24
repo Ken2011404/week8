@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main>
+      <section class="user-bg">
+        <div class="container user-banner">
+          <section class="row">
+            <div>
+              <div class="position-relative">
+                <img
+                  src="/assets/images/user/hero.png"
+                  alt=""
+                  class="img-fluid object-fit-cover rounded-4"
+                />
+                <a
+                  href="#"
+                  class="d-none d-lg-block text-light position-absolute bottom-0 end-0 m-7"
+                >
+                  <span class="material-icons-outlined me-2 align-bottom">
+                    edit </span
+                  >更換封面
+                </a>
+              </div>
+
+              <div class="position-relative">
+                <div class="">
+                  <img
+                    src="/assets/images/user/avatar-1.png"
+                    alt=""
+                    class="avatar-1 position-absolute top-100 start-50 translate-middle rounded-circle border-1 border-primary"
+                  />
+                </div>
+
+                <a href="#">
+                  <span
+                    class="edit-icon material-icons-outlined position-absolute translate-middle align-bottom p-2 bg-primary rounded-circle text-light"
+                  >
+                    edit
+                  </span></a
+                >
+              </div>
+            </div>
+            <div class="mt-11 text-center mb-lg-12 mb-8">
+              <h3 class="fs-lg-6 text-primary fw-bold mb-1">Jessica Yen</h3>
+              <p class="fs-14 text-neutral-80">jessica.yen@gmail.com</p>
+            </div>
+          </section>
+          <section class="bg-light py-5 px-7 shadow rounded-4 mb-lg-6 mb-5">
+            <div class="row">
+              <div
+                class="col-4 border-end border-neutral-40 text-nowrap d-flex align-items-center justify-content-center justify-content-lg-start"
+              >
+                <a
+                  href="#"
+                  class="pt-4 pb-2 border-bottom border-primary-40 border-3 fs-16 fw-bold"
+                >
+                  我的帳號</a
+                >
+              </div>
+              <div
+                class="col-4 border-end border-neutral-40 text-nowrap d-flex align-items-center justify-content-center justify-content-lg-start"
+              >
+                <a href="#" class="pt-4 pb-2 fs-16 fw-bold">訂單管理</a>
+              </div>
+              <div
+                class="col-4 text-nowrap d-flex align-items-center justify-content-center justify-content-lg-start"
+              >
+                <a href="#" class="pt-4 pb-2 fs-16 fw-bold">我的收藏</a>
+              </div>
+            </div>
+          </section>
+          <section
+            class="bg-light pt-9 pb-5 px-5 p-lg-9 mt-lg-9 shadow rounded-4"
+          >
+            <h3 class="fs-lg-1 fs-3 fw-bold mb-10">我的帳號</h3>
+            <ul class="nav mb-7 border-bottom" role="tablist">
+              <li class="nav-item me-9" role="presentation">
+                <button
+                  class="nav-link py-5 active"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-info"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-info"
+                  aria-selected="true"
+                >
+                  個人資訊
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link py-5"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-often-user"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-often-user"
+                  aria-selected="false"
+                >
+                  常用旅客
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tab-content">
+              <div class="tab-pane fade show active" id="pills-info">
+                <div class="mb-10">
+                  <div class="mb-7">
+                    <h6 class="fs-lg-16 fs-14 text-neutral-80 fw-normal mb-2">
+                      姓名
+                    </h6>
+                    <p class="fs-lg-6 fs-8 text-black fw-bold">Jessica Yen</p>
+                  </div>
+                  <div class="mb-7">
+                    <h6 class="fs-lg-16 fs-14 text-neutral-80 fw-normal mb-2">
+                      電子信箱
+                    </h6>
+                    <p class="fs-lg-6 fs-8 text-black fw-bold">
+                      jessica.yen@gmail.com
+                    </p>
+                  </div>
+                  <div class="mb-7">
+                    <h6 class="fs-lg-16 fs-14 text-neutral-80 fw-normal mb-2">
+                      密碼
+                    </h6>
+                    <p class="fs-lg-6 fs-8 text-black fw-bold">************</p>
+                  </div>
+                  <div class="mb-7">
+                    <h6 class="fs-lg-16 fs-14 text-neutral-80 fw-normal mb-2">
+                      聯絡電話
+                    </h6>
+                    <p class="fs-lg-6 fs-8 text-black fw-bold">
+                      +886 912-345-678
+                    </p>
+                  </div>
+                  <div class="mb-7">
+                    <h6 class="fs-lg-16 fs-14 text-neutral-80 fw-normal mb-2">
+                      地址
+                    </h6>
+                    <p class="fs-lg-6 fs-8 text-black fw-bold">
+                      台北市士林區幸福路193號5樓之1
+                    </p>
+                  </div>
+                  <div class="mb-7">
+                    <h6 class="fs-lg-16 fs-14 text-neutral-80 fw-normal mb-2">
+                      生日
+                    </h6>
+                    <p class="fs-lg-6 fs-8 text-black fw-bold">1995-09-20</p>
+                  </div>
+                </div>
+                <!-- 編輯按鈕 -->
+                <div class="d-flex d-lg-none">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary fs-16 fw-semibold py-5 px-lg-7 w-100"
+                  >
+                    <span class="material-icons-outlined align-bottom me-1">
+                      edit </span
+                    >編輯資訊
+                  </button>
+                </div>
+                <!-- 電腦版 -->
+                <div class="d-none d-lg-flex justify-content-lg-end">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary fs-8 fw-semibold py-lg-5 px-lg-9"
+                  >
+                    <span class="material-icons-outlined align-bottom me-lg-1">
+                      edit </span
+                    >編輯資訊
+                  </button>
+                </div>
+              </div>
+              <div class="tab-pane fade show" id="pills-often-user">
+                <div class="">
+                  <div class="">
+                    <div class="">
+                      <!-- Jessica -->
+                      <div class="user-info border rounded-3 mb-7">
+                        <div
+                          class="d-lg-flex justify-content-lg-between align-items-lg-center p-lg-6 p-5"
+                        >
+                          <div class="mb-5 mb-lg-0">
+                            <div
+                              class="often-user-img d-flex align-items-center"
+                            >
+                              <img
+                                src="../assets/images/user/avatar-1.png"
+                                alt="user1"
+                                class="me-2 img-fluid object-fit-cover rounded-circle border border-primary"
+                              />
+                              <p class="fs-6 fw-bold text-nowrap">
+                                Jessica Yen
+                              </p>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="d-flex">
+                              <button
+                                type="button"
+                                class="btn user-info-btn-hover btn-outline-primary bg-light text-primary fs-16 fw-semibold px-9 py-5 flex-fill me-2"
+                              >
+                                <span
+                                  class="material-icons-outlined align-bottom"
+                                >
+                                  edit </span
+                                >編輯資訊
+                              </button>
+                              <button
+                                type="button"
+                                class="btn user-info-btn-hover btn-outline-primary bg-light text-primary fs-8 fw-semibold px-9 py-5 flex-fill"
+                              >
+                                <span
+                                  class="material-icons-outlined align-bottom"
+                                >
+                                  close </span
+                                >刪除
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Jenny Lin -->
+                      <div>
+                        <div class="user-info border rounded-3 mb-10">
+                          <div
+                            class="d-lg-flex justify-content-lg-between align-items-lg-center p-lg-7 p-5"
+                          >
+                            <div class="mb-5 mb-lg-0">
+                              <div class="d-flex align-items-center">
+                                <img
+                                  src="../assets/images/user/avatar-2.jpg"
+                                  alt="user-2"
+                                  class="often-user-img me-2 rounded-circle img-fluid object-fit-cover border border-primary"
+                                />
+                                <div>
+                                  <p class="fs-6 fw-bold text-nowrap mb-lg-2">
+                                    Jenny Lin
+                                  </p>
+                                  <div class="d-none d-lg-block">
+                                    <p class="d-none d-lg-block">
+                                      <span
+                                        class="material-icons-outlined text-primary align-bottom me-lg-2"
+                                      >
+                                        cake </span
+                                      ><span>2001.01.30</span>
+                                    </p>
+                                    <p class="d-none d-lg-block">
+                                      <span
+                                        class="material-icons-outlined text-primary align-bottom me-lg-2"
+                                      >
+                                        mail </span
+                                      ><span>Jenny.Linnn@gmail.com</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="d-flex">
+                                <button
+                                  type="button"
+                                  class="btn user-info-btn-hover btn-outline-primary bg-light text-primary fs-16 fw-semibold px-9 py-5 flex-fill me-2"
+                                >
+                                  <span
+                                    class="material-icons-outlined align-bottom"
+                                  >
+                                    edit </span
+                                  >編輯資訊
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn user-info-btn-hover btn-outline-primary bg-light text-primary fs-8 fw-semibold px-9 py-5 flex-fill"
+                                >
+                                  <span
+                                    class="material-icons-outlined align-bottom"
+                                  >
+                                    close </span
+                                  >刪除
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex d-lg-none">
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary fs-16 fw-semibold py-5 px-lg-7 w-100"
+                          >
+                            <span
+                              class="material-icons-outlined align-bottom me-1"
+                            >
+                              add </span
+                            >新增常用旅客
+                          </button>
+                        </div>
+                        <div class="d-none d-lg-flex justify-content-lg-end">
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary fs-8 fw-semibold py-lg-5 px-lg-9"
+                          >
+                            <span
+                              class="material-icons-outlined align-bottom me-1"
+                            >
+                              add </span
+                            >新增常用旅客
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
