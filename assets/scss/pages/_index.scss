@@ -9,32 +9,36 @@
     font-family: Poppins, sans-serif;
   }
 }
+// .recommendation {
+//   background-color: #221f1e;
+//   button {
+//     opacity: 0;
+//     display: none;
+//   }
+//   .card {
+//     button {
+//       transition: all 0.5s;
+//       padding: 0px;
+//       height: 0;
+//       opacity: 0;
+//     }
+//     min-width: 275px;
+//     &:hover {
+//       button {
+//         padding: 20px;
+//         height: auto;
+//         opacity: 100;
+//       }
+//     }
+//   }
+// }
 .recommendation {
   background-color: #221f1e;
-  button {
-    opacity: 0;
-    display: none;
-  }
   .card {
-    button {
-      transition: all 0.5s;
-      padding: 0px;
-      height: 0;
-      opacity: 0;
-    }
     min-width: 275px;
-    &:hover {
-      button {
-        padding: 20px;
-        height: auto;
-        opacity: 100;
-      }
-    }
   }
 }
-.recommendation button {
-  display: none;
-}
+
 .inspiration-map {
   .btn1 {
     background-color: white;
@@ -154,6 +158,25 @@
       transition: width 0.5s;
       &:hover {
         width: 100%;
+      }
+    }
+  }
+  .recommendation {
+    button {
+      opacity: 0;
+      display: none;
+    }
+    button {
+      transition: all 0.5s;
+      padding: 0px;
+      height: 0;
+      opacity: 0;
+    }
+    .card:hover {
+      button {
+        padding: 20px;
+        height: auto;
+        opacity: 100;
       }
     }
   }
