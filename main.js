@@ -26,7 +26,7 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     // 0px 以上（手機）
     0: {
-      slidesPerView: 1,
+      slidesPerView: 1.5,
     },
     // 768px 以上（平板）
     768: {
@@ -34,7 +34,7 @@ const swiper = new Swiper(".swiper", {
     },
     // 992px 以上（桌機）
     992: {
-      slidesPerView: 3,
+      slidesPerView: 1.5,
     },
   },
 });

@@ -71,9 +71,9 @@
 // }
 
 .swiper-slide {
-  // width: 312px !important;
+  width: 312px !important;
   height: auto;
-  overflow: visible;
+  // overflow: visible;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,9 +180,6 @@
       }
     }
   }
-  // .swiper-slide {
-  //   width: auto !important;
-  // }
 
   .card-number {
     font-size: 200px;
@@ -194,6 +191,12 @@
     height: 412px;
   }
 
+  .swiper-slide {
+    width: 746px !important;
+  }
+  .map-card {
+    width: 746px !important;
+  }
   .deco-bg {
     position: relative;
     overflow: hidden;
