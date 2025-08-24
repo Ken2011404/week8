@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>index</title>
+    <script type="module" crossorigin src="/week8/assets/main-CKa3W1Ez.js"></script>
+    <link rel="stylesheet" crossorigin href="/week8/assets/main-CPdC80Uk.css">
+  </head>
+  <body>
+    <nav class="navbar bg-white py-4 py-lg-5 fixed-top">
+  <div class="container position-relative">
+    <div class="d-flex align-items-center me-auto">
+      <a class="navbar-brand p-0 me-lg-7" href="#">
+        <img src="data:image/png;base64,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" alt="index" />
+      </a>
+      <form class="position-relative d-none d-lg-block">
+        <span
+          class="material-icons-outlined position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"
+        >
+          search
+        </span>
+        <input
+          type="search"
+          class="form-control rounded-3 py-2 py-lg-3 ps-10"
+          id="nav-lg-search"
+          placeholder="搜尋景點、地點或城市"
+          style="width: 400px"
+        />
+      </form>
+    </div>
+
+    <div class="position-absolute z-1 start-0 end-0 px-4 bg-white">
+      <div class="collapse" id="collapseExample">
+        <div class="d-flex align-items-center">
+          <form class="position-relative w-100">
+            <span
+              class="material-icons-outlined position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"
+            >
+              search
+            </span>
+            <input
+              type="search"
+              class="form-control rounded-3 py-2 ps-10"
+              id="exampleFormControlInput1"
+              placeholder="搜尋景點、地點或城市"
+            />
+          </form>
+          <button type="button " class="btn p-2 border-0">
+            <span
+              class="material-icons-outlined align-bottom"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+            >
+              close
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      class="btn p-2 border-0 d-lg-none"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseExample"
+    >
+      <span class="material-icons-outlined align-bottom"> search </span>
+    </button>
+    <a href="#" class="btn border-0 py-2">
+      <span class="position-relative">
+        <span class="material-icons-outlined align-bottom">
+          shopping_cart
+        </span>
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-alert p-0"
+          style="width: 16px; height: 16px; line-height: 1.3333"
+        >
+          2
+        </span>
+      </span>
+    </a>
+    <!-- LOGIN -->
+    <a
+      type="button"
+      href="#"
+      class="btn text-white bg-primary ms-5 d-none d-lg-block py-5 px-9 fw-semibold rounded-4"
+      >登入 / 註冊</a
+    >
+    <!-- Modal 按鈕 -->
+    <!-- <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      打開 modal
+    </button> -->
+
+    <!-- Modal 元件 -->
+    <!-- <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">內容</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              關閉
+            </button>
+            <button type="button" class="btn btn-primary">確定</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <button
+      class="btn border-0 p-2 d-lg-none"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+      aria-label="Toggle navigation"
+    >
+      <span class="material-icons-outlined align-bottom"> menu </span>
+    </button>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+    <main></main>
+
+    <div class="bg-black">
+  <div
+    class="container d-lg-flex justify-content-lg-between align-items-center flex-lg-row flex-column py-lg-14 py-11"
+  >
+    <div class="mb-10">
+      <img src="data:image/png;base64,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" alt="logo" class="mb-10" />
+      <ul class="list-unstyled d-lg-flex">
+        <li class="text-light me-lg-9 mb-4 mb-lg-0">
+          <a href="#">常見問題</a>
+        </li>
+        <li class="text-light me-lg-9 mb-4 mb-lg-0">
+          <a href="#">關於我們</a>
+        </li>
+        <li class="text-light me-lg-9 mb-4 mb-lg-0">
+          <a href="#">隱私權政策</a>
+        </li>
+        <li class="text-light"><a href="#">使用者條款</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="mb-5">
+        <a href="#"
+          ><i
+            class="bi bi-line text-light fs-16 me-5 p-4 rounded-circle mb-5"
+          ></i
+        ></a>
+        <a href="#"
+          ><i
+            class="bi bi-youtube text-light fs-16 me-5 p-4 rounded-circle"
+            style="width: 16px; height: 16px"
+          ></i
+        ></a>
+        <a href="#"
+          ><i class="bi bi-facebook text-light fs-16 p-4 rounded-circle"></i
+        ></a>
+      </div>
+      <p class="mt-5" style="color: #d4d4d4">
+        copyright © 2025 ZOBAA 旅遊網站 All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
