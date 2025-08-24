@@ -9,7 +9,29 @@
     font-family: Poppins, sans-serif;
   }
 }
-
+.recommendation {
+  background-color: #221f1e;
+  button {
+    opacity: 0;
+    display: none;
+  }
+  .card {
+    button {
+      transition: all 0.5s;
+      padding: 0px;
+      height: 0;
+      opacity: 0;
+    }
+    min-width: 275px;
+    &:hover {
+      button {
+        padding: 20px;
+        height: auto;
+        opacity: 100;
+      }
+    }
+  }
+}
 .recommendation button {
   display: none;
 }
@@ -139,29 +161,6 @@
   //   width: auto !important;
   // }
 
-  .recommendation {
-    background-color: #221f1e;
-    button {
-      opacity: 0;
-      display: none;
-    }
-    .card {
-      button {
-        transition: all 0.5s;
-        padding: 0px;
-        height: 0;
-        opacity: 0;
-      }
-      min-width: 275px;
-      &:hover {
-        button {
-          padding: 20px;
-          height: auto;
-          opacity: 100;
-        }
-      }
-    }
-  }
   .card-number {
     font-size: 200px;
     top: -130px;
